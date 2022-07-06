@@ -1,0 +1,55 @@
+@use '../util' as u;
+
+.stats {
+    padding-left: u.rem(5);
+
+    &__chart {
+        margin-top: u.rem(45);
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__bar {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color: var(--primary-one);
+        width: 80%;
+        border-radius: u.rem(7);
+        transition: height 1s, opacity 0.1s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+        &:hover .stats__tooltip {
+            opacity: 1 ;
+            
+        }
+
+    }
+    
+    &__label {
+        text-align: center;
+        font-size: u.rem(15);
+        color: var(--neutral-two);
+        margin-top: u.rem(12);
+    }
+    &__tooltip {
+        position: absolute;
+        color: var(--neutral-four);
+        background-color: var(--neutral-one);
+        padding: u.rem(3);
+        border-radius: u.rem(5);
+        transition: opacity 0.2s;
+        top: u.rem(-35);
+        text-align: center;
+        opacity: 0;
+
+    }
+
+}

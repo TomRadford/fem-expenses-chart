@@ -3,13 +3,25 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: u.rem(20);
-    width: min(100% - u.rem(20), u.rem(400));
+    width: min(100% - u.rem(22), u.rem(450));
     
     &__main, &__aside {
         border-radius: u.rem(10);
-
+        padding: u.rem(20);
         p, h2, h3 {
             margin: 0;
         }
     }
+
+    &__aside {
+        color: var(--neutral-three);
+        background-color: var(--primary-one);
+    }
+
+    &__main {
+        color: var(--neutral-one);
+        background-color: var(--neutral-four);
+    }
+
+
 }
