@@ -31,3 +31,24 @@ The designs were created to the following widths:
 
 - Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
 - Weights: 400, 700
+
+
+
+       My balance
+  $921.48
+
+  Spending - Last 7 days
+
+  mon
+  tue
+  wed
+  thu
+  fri
+  sat
+  sun
+
+  Total this month
+  $478.33
+
+  +2.4%
+  from last month

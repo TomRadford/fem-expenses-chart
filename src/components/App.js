@@ -1,27 +1,15 @@
 const App = () => {
   return (
-    <div className="App">
-       My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-
+    <div className="grid">
+      <aside className="grid__aside">
+        <p>My balance</p>
+        <h3>$921.48</h3>
+      </aside>
+      <main className="grid__main">
+        <h3>Spending - Last 7 days</h3>
+      </main>
     </div>
-  )
-}
+  );
+};
 
 export default App;
