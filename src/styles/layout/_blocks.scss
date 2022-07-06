@@ -1,0 +1,53 @@
+@use "../util/" as u;
+
+.stats {
+  color: var(--neutral-one);
+  background-color: var(--neutral-four);
+}
+
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: u.rem(20);
+  margin-left: u.rem(10);
+  margin-top: u.rem(5);
+  margin-bottom: u.rem(5);
+  color: var(--neutral-three);
+  background-color: var(--primary-one);
+  p {
+    font-weight: 400;
+    font-size: u.rem(18);
+  }
+  h3 {
+    margin-top: u.rem(6);
+  }
+  .circles {
+    display: block;
+    .circle-one,
+    .circle-two {
+      display: inline-block;
+      height: u.rem(28);
+      width: u.rem(28);
+      position: relative;
+    }
+    .circle-one {
+      border-style: solid;
+      border-width: u.rem(1);
+      border-color: hsl(33, 100%, 98%);
+      border-radius: u.rem(28);
+      z-index: 100;
+      left: u.rem(15);
+      transition: left 1s;
+    }
+    .circle-two {
+      height: u.rem(28);
+      width: u.rem(28);
+      background-color: hsl(25, 47%, 15%);
+      border-radius: u.rem(28);
+    }
+    &:hover .circle-one {
+      left: u.rem(28);
+    }
+  }
+}

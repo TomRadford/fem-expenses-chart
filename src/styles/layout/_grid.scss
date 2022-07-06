@@ -1,5 +1,15 @@
-
+@use '../util/' as u;
 .grid {
-    width: 500px;
-    margin-inline: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: u.rem(20);
+    width: min(100% - u.rem(20), u.rem(400));
+    
+    &__main, &__aside {
+        border-radius: u.rem(10);
+
+        p, h2, h3 {
+            margin: 0;
+        }
+    }
 }
