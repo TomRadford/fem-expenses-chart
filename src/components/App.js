@@ -60,6 +60,17 @@ const App = () => {
                 </div>
               ))}
             </div>
+            <div className="stats__divider"></div>
+            <div className="stats__summary">
+                <div className="stats__total">
+                  <p>Total this month</p>
+                  <h1>$478.33</h1>
+                </div>
+                <div className="stats__monthdiffence">
+                  <strong>+2.4%</strong>
+                  <p>from last month</p>
+                </div>
+            </div>
           </div>
         </main>
       </div>
